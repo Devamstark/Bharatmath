@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "functions": {
+    "api/process-image.py": { "runtime": "python3.11" }
+  },
+  "routes": [
+    { "src": "/api/process-image", "dest": "/api/process-image.py" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}
